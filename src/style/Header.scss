@@ -1,0 +1,38 @@
+@media only screen and (min-width: 1200px) {
+  body {
+    background-color: rgb(90, 157, 235);
+  }
+  header {
+    position: relative;
+    background-color: rgb(72, 140, 230);
+    .headerBackgroundImage {
+      height: 100vh;
+      background-image: url(../images/header-bgi.png);
+      background-position: center;
+      background-size: cover;
+      box-shadow: 0px 5px 22px 11px #414141;
+    }
+    h1 {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: "VT323", monospace;
+      font-size: 120px;
+      font-weight: normal;
+    }
+    .idleImageContainer {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      width: 600px;
+      height: 600px;
+      transform: translate(-50%, -50%);
+      overflow: hidden;
+      .idleAnimationSprite {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+}
