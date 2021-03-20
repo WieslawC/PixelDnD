@@ -1,7 +1,7 @@
 import "../style/Main.scss";
 
 const Main = () => {
-  return <main></main>;
+  return <main>Main</main>;
 };
 
 export default Main;

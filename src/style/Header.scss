@@ -1,38 +1,122 @@
+$headerBgAnimTime: 120s;
+
 @media only screen and (min-width: 1200px) {
-  body {
-    background-color: rgb(90, 157, 235);
-  }
   header {
-    position: relative;
-    background-color: rgb(72, 140, 230);
-    .headerBackgroundImage {
-      height: 100vh;
-      background-image: url(../images/header-bgi.png);
-      background-position: center;
-      background-size: cover;
-      box-shadow: 0px 5px 22px 11px #414141;
-    }
     h1 {
       position: absolute;
-      top: 60%;
+      top: 20%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      transform: translateX(-50%);
       font-family: "VT323", monospace;
       font-size: 120px;
       font-weight: normal;
+      color: white;
+      opacity: 0;
+      z-index: 12;
+      animation: showText 2.5s forwards linear;
     }
-    .idleImageContainer {
-      position: absolute;
-      top: 80%;
-      left: 50%;
-      width: 600px;
-      height: 600px;
-      transform: translate(-50%, -50%);
-      overflow: hidden;
-      .idleAnimationSprite {
-        height: 100%;
-        width: auto;
+    .imageContainer {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      .image {
+        position: absolute;
+        top: -35%;
+        left: 0;
+        width: 100%;
+        height: 135%;
+        background-position: center;
+        background-size: contain;
+      }
+      .layer0 {
+        z-index: 11;
+        background-image: url(../images/headerBackground/Layer_0000_9.png);
+        animation: changeBackgroundPosition $headerBgAnimTime linear infinite;
+      }
+      .layer1 {
+        z-index: 10;
+        background-image: url(../images/headerBackground/Layer_0001_8.png);
+        animation: changeBackgroundPosition $headerBgAnimTime + 10 linear
+          infinite;
+      }
+      .layer2 {
+        z-index: 9;
+        background-image: url(../images/headerBackground/Layer_0002_7.png);
+        animation: changeBackgroundPosition $headerBgAnimTime + 20 linear
+          infinite;
+      }
+      .layer3 {
+        z-index: 8;
+        background-image: url(../images/headerBackground/Layer_0003_6.png);
+        animation: changeBackgroundPosition $headerBgAnimTime + 30 linear
+          infinite;
+      }
+      .layer4 {
+        z-index: 7;
+        background-image: url(../images/headerBackground/Layer_0004_Lights.png);
+        animation: changeBackgroundPosition $headerBgAnimTime + 40 linear
+          infinite;
+      }
+      .layer5 {
+        z-index: 6;
+        background-image: url(../images/headerBackground/Layer_0005_5.png);
+        animation: changeBackgroundPosition $headerBgAnimTime + 50 linear
+          infinite;
+      }
+      .layer6 {
+        z-index: 5;
+        background-image: url(../images/headerBackground/Layer_0006_4.png);
+        animation: changeBackgroundPosition $headerBgAnimTime + 60 linear
+          infinite;
+      }
+      .layer7 {
+        z-index: 4;
+        background-image: url(../images/headerBackground/Layer_0007_Lights.png);
+        animation: changeBackgroundPosition $headerBgAnimTime + 70 linear
+          infinite;
+      }
+      .layer8 {
+        z-index: 3;
+        background-image: url(../images/headerBackground/Layer_0008_3.png);
+        animation: changeBackgroundPosition $headerBgAnimTime + 80 linear
+          infinite;
+      }
+      .layer9 {
+        z-index: 2;
+        background-image: url(../images/headerBackground/Layer_0009_2.png);
+        animation: changeBackgroundPosition $headerBgAnimTime + 90 linear
+          infinite;
+      }
+      .layer10 {
+        z-index: 1;
+        background-image: url(../images/headerBackground/Layer_0010_1.png);
+        animation: changeBackgroundPosition $headerBgAnimTime + 100 linear
+          infinite;
       }
     }
+  }
+}
+
+@keyframes changeBackgroundPosition {
+  from {
+    background-position: center;
+  }
+
+  to {
+    background-position: 10000px;
+  }
+}
+
+@keyframes showText {
+  from {
+    opacity: 0;
+  }
+
+  30% {
+    opacity: 20%;
+  }
+
+  to {
+    opacity: 1;
   }
 }
