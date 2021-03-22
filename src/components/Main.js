@@ -5,12 +5,12 @@ import createSpriteAnimation from "../handyFunctions.js";
 
 class Main extends Component {
   componentDidMount() {
+    const idleSpirte = document.querySelector(".idleSprite");
     const mainAboutTitle = document.querySelector(".mainAboutTitle");
     const mainContainerBackground = document.querySelector(
       "main .container .imageContainer"
     );
     const elementsToActivate = [mainAboutTitle, mainContainerBackground];
-    const idleSpirte = document.querySelector(".idleSprite");
 
     window.addEventListener("scroll", () => {
       elementsToActivate.forEach((item) => {
