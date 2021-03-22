@@ -1,4 +1,5 @@
 $headerBgAnimTime: 120s;
+
 @media only screen and (min-width: 200px) {
   header {
     h1 {
@@ -6,6 +7,7 @@ $headerBgAnimTime: 120s;
       top: 20%;
       left: 50%;
       transform: translateX(-50%);
+      text-align: center;
       font-size: 70px;
       font-family: "VT323", monospace;
       font-weight: normal;

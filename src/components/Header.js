@@ -3,14 +3,12 @@ import "../style/Header.scss";
 import { Component } from "react";
 
 class Header extends Component {
-  componentDidMount() {
-    // const idleImage = document.querySelector(".idleAnimationSprite");
-    // createSpriteAnimation(idleImage);
-  }
+  // componentDidMount() {
+  // }
   render() {
     return (
       <header>
-        <h1>Pixel D&D</h1>
+        <h1 className="headerTitle">Pixel D&D</h1>
         <div className="imageContainer">
           <div className="image layer0"></div>
           <div className="image layer1"></div>
