@@ -1,7 +1,11 @@
 import "../style/Main.scss";
 
 const Main = () => {
-  return <main>Main</main>;
+  return (
+    <main>
+      <h2>What is D&D</h2>
+    </main>
+  );
 };
 
 export default Main;

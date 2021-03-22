@@ -10,7 +10,7 @@ class Header extends Component {
   render() {
     return (
       <header>
-        <h1>Pixel DnD</h1>
+        <h1>Pixel D&D</h1>
         <div className="imageContainer">
           <div className="image layer0"></div>
           <div className="image layer1"></div>
