@@ -21,17 +21,14 @@
       display: flex;
       flex-direction: column;
       overflow: hidden;
-      .imageContainer {
+      .imageContainer,
+      .imageContainerSecond {
         position: relative;
         left: -100px;
         width: 100%;
         opacity: 0;
         margin-bottom: 20px;
-        &.active {
-          opacity: 1;
-          transition: 1.5s;
-          left: 0;
-        }
+
         .background {
           width: 250px;
           height: 250px;
@@ -53,11 +50,36 @@
           }
         }
       }
+      .imageContainer.active {
+        opacity: 1;
+        transition: 1.5s;
+        left: 0;
+      }
+      .imageContainerSecond {
+        left: auto;
+        right: -100px;
+        &.active {
+          opacity: 1;
+          transition: 1.5s;
+          right: 0;
+        }
+      }
       .textContainer {
         width: 90%;
         margin: 0 auto;
         font-size: 20px;
         color: white;
+      }
+    }
+    .secondContainer {
+      .imageContainerSecond {
+        .background {
+          width: 200px;
+          height: 200px;
+        }
+        .image {
+          top: 55%;
+        }
       }
     }
   }
@@ -69,7 +91,8 @@
       font-size: 70px;
     }
     .container {
-      .imageContainer {
+      .imageContainer,
+      .imageContainerSecond {
         .background {
           width: 400px;
           height: 400px;
@@ -81,6 +104,14 @@
       }
       .textContainer {
         font-size: 30px;
+      }
+    }
+    .secondContainer {
+      .imageContainerSecond {
+        .background {
+          width: 300px;
+          height: 300px;
+        }
       }
     }
   }
@@ -97,7 +128,8 @@
       margin: 0 auto;
       padding: 50px 0;
       flex-direction: row;
-      .imageContainer {
+      .imageContainer,
+      .imageContainerSecond {
         width: 50%;
         .background {
           width: 25vw;
@@ -113,13 +145,23 @@
         align-self: center;
       }
     }
+    .secondContainer {
+      flex-direction: row-reverse;
+      .imageContainerSecond {
+        .background {
+          width: 20vw;
+          height: 20vw;
+        }
+      }
+    }
   }
 }
 @media only screen and (min-width: 1900px) {
   main {
     .container {
       margin: 0 auto;
-      .imageContainer {
+      .imageContainer,
+      .imageContainerSecond {
         .image {
           width: 1500px;
           height: 1500px;

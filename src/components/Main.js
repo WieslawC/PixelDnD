@@ -1,26 +1,36 @@
 import "../style/Main.scss";
 import { Component } from "react";
-import idleSpite from "../images/Idle.png";
+import idleEvilMage from "../images/IdleEvilMage.png";
+import idleSamuraj from "../images/IdleSamuraj.png";
 import createSpriteAnimation from "../handyFunctions.js";
 
 class Main extends Component {
   componentDidMount() {
-    const idleSpirte = document.querySelector(".idleSprite");
+    const idleEvilMageSprite = document.querySelector(".idleEvilMageSprite");
+    const idleSamurajSprite = document.querySelector(".idleSamurajSprite");
     const mainAboutTitle = document.querySelector(".mainAboutTitle");
     const mainContainerBackground = document.querySelector(
       "main .container .imageContainer"
     );
-    const elementsToActivate = [mainAboutTitle, mainContainerBackground];
+    const mainContainerBackground2 = document.querySelector(
+      "main .container .imageContainerSecond"
+    );
+    const elementsToActivate = [
+      mainAboutTitle,
+      mainContainerBackground,
+      mainContainerBackground2,
+    ];
 
     window.addEventListener("scroll", () => {
       elementsToActivate.forEach((item) => {
-        if (window.scrollY >= item.offsetTop / 3) {
+        if (window.scrollY >= item.offsetTop / 2) {
           item.classList.add("active");
         }
       });
     });
 
-    createSpriteAnimation(idleSpirte, 150);
+    createSpriteAnimation(idleEvilMageSprite, 150);
+    createSpriteAnimation(idleSamurajSprite, 150);
   }
 
   render() {
@@ -32,9 +42,26 @@ class Main extends Component {
             <div className="background"></div>
             <div className="image">
               <img
-                src={idleSpite}
+                src={idleEvilMage}
                 alt="Idle animation"
-                className="idleSprite"
+                className="idleEvilMageSprite"
+              />
+            </div>
+          </div>
+          <div className="textContainer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+            maiores voluptatibus maxime perferendis iste. Voluptates, nihil
+            omnis pariatur laudantium eius deserunt minima quis natus dolorum
+          </div>
+        </div>
+        <div className="container secondContainer">
+          <div className="imageContainerSecond">
+            <div className="background"></div>
+            <div className="image">
+              <img
+                src={idleSamuraj}
+                alt="Idle animation"
+                className="idleSamurajSprite"
               />
             </div>
           </div>
