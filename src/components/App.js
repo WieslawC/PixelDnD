@@ -7,6 +7,7 @@ function App() {
     <div className="wrapper">
       <Header />
       <Main />
+      <div className="others">Hello There</div>
     </div>
   );
 }

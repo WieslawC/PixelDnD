@@ -8,6 +8,7 @@ class Main extends Component {
   componentDidMount() {
     const idleEvilMageSprite = document.querySelector(".idleEvilMageSprite");
     const idleSamurajSprite = document.querySelector(".idleSamurajSprite");
+
     const mainAboutTitle = document.querySelector(".mainAboutTitle");
     const mainContainerBackground = document.querySelector(
       "main .container .imageContainer"
@@ -15,10 +16,19 @@ class Main extends Component {
     const mainContainerBackground2 = document.querySelector(
       "main .container .imageContainerSecond"
     );
+    const textContainer = document.querySelector(
+      "main .container .textContainer"
+    );
+    const textContainer2 = document.querySelector(
+      "main .secondContainer .textContainer"
+    );
+
     const elementsToActivate = [
       mainAboutTitle,
       mainContainerBackground,
       mainContainerBackground2,
+      textContainer,
+      textContainer2,
     ];
 
     window.addEventListener("scroll", () => {
@@ -49,9 +59,13 @@ class Main extends Component {
             </div>
           </div>
           <div className="textContainer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-            maiores voluptatibus maxime perferendis iste. Voluptates, nihil
-            omnis pariatur laudantium eius deserunt minima quis natus dolorum
+            "The core of D&D is storytelling. You and your friends tell a story
+            together, guiding your heroes through quests for treasure, battles
+            with deadly foes, daring rescues, courtly intrigue, and much more.
+            You can also explore the world of Dungeons & Dragons through any of
+            the novels written by its fantasy authors, as well as engaging board
+            games and immersive video games. All of these stories are part of
+            D&D." -> dnd.wizards.com
           </div>
         </div>
         <div className="container secondContainer">
