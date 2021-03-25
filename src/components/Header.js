@@ -1,10 +1,7 @@
 import "../style/Header.scss";
-// import createSpriteAnimation from "../handyFunctions.js";
 import { Component } from "react";
 
 class Header extends Component {
-  // componentDidMount() {
-  // }
   render() {
     return (
       <header>

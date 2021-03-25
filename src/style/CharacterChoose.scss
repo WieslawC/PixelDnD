@@ -1,0 +1,28 @@
+@media only screen and (min-width: 200px) {
+}
+@media only screen and (min-width: 1200px) {
+}
+@media only screen and (min-width: 1920px) {
+  .characterChoose {
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    .characterChooseContainer {
+      opacity: 0;
+      margin-bottom: 50px;
+      h2 {
+        font-size: 80px;
+        text-align: center;
+        padding: 15px 0;
+      }
+      p {
+        font-size: 50px;
+        text-align: center;
+      }
+      &.active {
+        opacity: 1;
+        transition: 1.5s 0.3s;
+      }
+    }
+  }
+}
