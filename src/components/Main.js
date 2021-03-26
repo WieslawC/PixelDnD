@@ -83,9 +83,7 @@ class Main extends Component {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
             maiores voluptatibus maxime perferendis iste. Voluptates, nihil
             omnis pariatur laudantium eius deserunt minima quis natus dolorum
-            quo ea distinctio nemo quam? Quasi atque a tempora, asperiores enim
-            eveniet voluptatem eum! Sint labore illo excepturi eius repellat
-            doloremque. Unde praesentium consequuntur explicabo?
+            quo ea distinctio nemo quam? Quasi atque a tempora,
           </div>
         </div>
       </main>
