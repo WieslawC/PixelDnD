@@ -37,8 +37,11 @@ class CharacterChose extends Component {
           <h2>Write your own story</h2>
           <p>and become a beloved hero or ... a hated villain</p>
         </div>
+        <div className="backgroundWall"></div>
+        <p className="characterImagesTitle">And as a... </p>
         <div className="charactersImages">
           <div className="image">
+            <p className="spriteDescription">Warrior</p>
             <img
               src={warriorAttack}
               alt="warrior attack"
@@ -46,6 +49,7 @@ class CharacterChose extends Component {
             />
           </div>
           <div className="image">
+            <p className="spriteDescription">Ranger</p>
             <img
               src={huntressAttack}
               alt="huntress attack"
@@ -53,12 +57,19 @@ class CharacterChose extends Component {
             />
           </div>
           <div className="image">
+            <p className="spriteDescription">Mage</p>
             <img
               src={mageAttack}
               alt="mage attack"
               className="mageAttackSprite"
             />
           </div>
+        </div>
+        <div className="characterChooseEnd">
+          <p>
+            ...and many, many more character archetypes, or your own unique
+            hero, travel through lands of great danger and precious treasures.
+          </p>
         </div>
       </div>
     );
