@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/PixelDnD/static/css/main.42e54e4e.chunk.css",
-    "main.js": "/PixelDnD/static/js/main.0e0d9f6e.chunk.js",
-    "main.js.map": "/PixelDnD/static/js/main.0e0d9f6e.chunk.js.map",
+    "main.css": "/PixelDnD/static/css/main.82458178.chunk.css",
+    "main.js": "/PixelDnD/static/js/main.5fe45f8b.chunk.js",
+    "main.js.map": "/PixelDnD/static/js/main.5fe45f8b.chunk.js.map",
     "runtime-main.js": "/PixelDnD/static/js/runtime-main.00b41383.js",
     "runtime-main.js.map": "/PixelDnD/static/js/runtime-main.00b41383.js.map",
     "static/js/2.cd140cd9.chunk.js": "/PixelDnD/static/js/2.cd140cd9.chunk.js",
     "static/js/2.cd140cd9.chunk.js.map": "/PixelDnD/static/js/2.cd140cd9.chunk.js.map",
     "index.html": "/PixelDnD/index.html",
-    "static/css/main.42e54e4e.chunk.css.map": "/PixelDnD/static/css/main.42e54e4e.chunk.css.map",
+    "static/css/main.82458178.chunk.css.map": "/PixelDnD/static/css/main.82458178.chunk.css.map",
     "static/js/2.cd140cd9.chunk.js.LICENSE.txt": "/PixelDnD/static/js/2.cd140cd9.chunk.js.LICENSE.txt",
+    "static/media/HuntressAttack.5cce49f8.png": "/PixelDnD/static/media/HuntressAttack.5cce49f8.png",
     "static/media/IdleEvilMage.ce587108.png": "/PixelDnD/static/media/IdleEvilMage.ce587108.png",
     "static/media/IdleSamuraj.cdaea6bf.png": "/PixelDnD/static/media/IdleSamuraj.cdaea6bf.png",
-    "static/media/Header.scss": "/PixelDnD/static/media/Layer_0006_4.9a52a798.png"
+    "static/media/Header.scss": "/PixelDnD/static/media/Layer_0006_4.9a52a798.png",
+    "static/media/MageAttack.56af6875.png": "/PixelDnD/static/media/MageAttack.56af6875.png",
+    "static/media/WarriorAttack.1d37b883.png": "/PixelDnD/static/media/WarriorAttack.1d37b883.png",
+    "static/media/CharacterChoose.scss": "/PixelDnD/static/media/moonBackground.3df8b1bf.png"
   },
   "entrypoints": [
     "static/js/runtime-main.00b41383.js",
     "static/js/2.cd140cd9.chunk.js",
-    "static/css/main.42e54e4e.chunk.css",
-    "static/js/main.0e0d9f6e.chunk.js"
+    "static/css/main.82458178.chunk.css",
+    "static/js/main.5fe45f8b.chunk.js"
   ]
 }
